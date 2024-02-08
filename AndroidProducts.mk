@@ -6,3 +6,8 @@
 
 PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/lineage_tissot.mk
+
+COMMON_LUNCH_CHOICES := \
+    lineage_tissot-ap4a-userdebug \
+    lineage_tissot-ap4a-user \
+    lineage_tissot-ap4a-eng

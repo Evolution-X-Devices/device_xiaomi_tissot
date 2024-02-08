@@ -1,0 +1,25 @@
+[
+  {
+    "repository": "device_xiaomi_msm8953-common",
+    "target_path": "device/xiaomi/msm8953-common"
+  },
+  {
+    "repository": "vendor_xiaomi_msm8953-common",
+    "target_path": "vendor/xiaomi/msm8953-common"
+  },
+  {
+    "repository": "vendor_xiaomi_tissot",
+    "target_path": "vendor/xiaomi/tissot"
+  },
+  {
+    "repository": "Lafactorial/android_kernel_xiaomi_msm8953",
+    "target_path": "kernel/xiaomi/msm8953",
+    "remote": "github-non-los",
+    "branch": "lineage-21"
+  },
+  {
+    "repository": "Evolution-X/hardware_xiaomi",
+    "target_path": "hardware/xiaomi",
+    "remote": "github-non-los"
+  }
+]
