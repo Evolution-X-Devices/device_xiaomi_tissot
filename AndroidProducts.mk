@@ -6,3 +6,8 @@
 
 PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/evolution_tissot.mk
+
+COMMON_LUNCH_CHOICES := \
+    evolution_tissot-user \
+    evolution_tissot-userdebug \
+    evolution_tissot-eng

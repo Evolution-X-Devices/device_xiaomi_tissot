@@ -4,7 +4,6 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-TARGET_KERNEL_VERSION := 4.9
 
 # Inherit from common msm8953-common
 include device/xiaomi/msm8953-common/BoardConfigCommon.mk
@@ -24,6 +23,11 @@ DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
 # Kernel
 TARGET_KERNEL_CONFIG := tissot_defconfig
 
+# A/B
+AB_OTA_PARTITIONS += \
+    boot \
+    system
+
 # Partitions
 BOARD_USERDATAIMAGE_PARTITION_SIZE := 55087422464 # 25765059584 - 16384
 
@@ -33,18 +37,8 @@ TARGET_SUPPORT_HAL1 := false
 # Power
 TARGET_TAP_TO_WAKE_NODE := "/proc/touchpanel/enable_dt2w"
 
-# RIL
-ENABLE_VENDOR_RIL_SERVICE := true
-
 # Security Patch Level
 VENDOR_SECURITY_PATCH := $(PLATFORM_SECURITY_PATCH)
-
-# Treble
-BOARD_VENDORIMAGE_PARTITION_SIZE := 629145600
-BOARD_VENDORIMAGE_FILE_SYSTEM_TYPE := ext4
-TARGET_COPY_OUT_VENDOR := vendor
-BOARD_PROPERTY_OVERRIDES_SPLIT_ENABLED := true
-PRODUCT_FULL_TREBLE_OVERRIDE := true
 
 # Inherit the proprietary files
 include vendor/xiaomi/tissot/BoardConfigVendor.mk

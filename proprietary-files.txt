@@ -10,8 +10,6 @@ vendor/etc/acdbdata/QRD/QRD_adsp_avs_config.acdb
 vendor/etc/acdbdata/QRD/QRD_workspaceFile.qwsp
 
 # Camera
--vendor/lib/libts_detected_face_hal.so|247470e7610f93b0a21d943f5e47ab61a032b1e0	
--vendor/lib/libts_face_beautify_hal.so|4b8700003fd32f5a6a650821b86ed33e73992d10
 vendor/bin/mm-qcamera-daemon
 vendor/lib/libflash_pmic.so
 vendor/lib/libjpegdhw.so
@@ -42,7 +40,7 @@ vendor/lib/libmmcamera_eztune_module.so
 vendor/lib/libmmcamera_facedetection_lib.so
 vendor/lib/libmmcamera_faceproc.so
 vendor/lib/libmmcamera_faceproc2.so
-vendor/lib/libmmcamera_hdr_gb_lib.so
+vendor/lib/libmmcamera_hdr_gb_lib.so|f88c3c342c83e11642fceb2356b8f44a23b55e12
 vendor/lib/libmmcamera_imglib.so
 vendor/lib/libmmcamera_paaf_lib.so
 vendor/lib/libmmcamera_pdaf.so
@@ -62,13 +60,15 @@ vendor/lib/libqomx_jpegdec.so
 vendor/lib/libqomx_jpegenc.so
 vendor/lib/libqomx_jpegenc_pipe.so
 vendor/lib/libremosaic_daemon.so
+-vendor/lib/libts_detected_face_hal.so|247470e7610f93b0a21d943f5e47ab61a032b1e0|356a49713693fa83d058e968c00d129d85c8acfb
+-vendor/lib/libts_face_beautify_hal.so|4b8700003fd32f5a6a650821b86ed33e73992d10|5b2ffbbd2b03eb4b1b98d89c04bdd3873db4bb7f
 
 # Camera actuators
-vendor/lib/libactuator_dw9763.so
 vendor/lib/libactuator_dw9763_ofilm_ov12a10.so
 vendor/lib/libactuator_dw9763_ofilm_ov13880.so
 vendor/lib/libactuator_dw9763_ov12a10.so
 vendor/lib/libactuator_dw9763_ov13880.so
+vendor/lib/libactuator_dw9763.so
 
 # Camera chromatix
 vendor/lib/libchromatix_csidtg_common.so
@@ -306,56 +306,56 @@ vendor/lib/libmmcamera_qtech_ov5675_eeprom.so
 vendor/lib/libmmcamera_s5k5e8_ofilm.so
 
 # Camera isp
-vendor/lib/libmmcamera_isp_abf40.so
-vendor/lib/libmmcamera_isp_bcc40.so
-vendor/lib/libmmcamera_isp_be_stats44.so
-vendor/lib/libmmcamera_isp_bf_stats47.so
-vendor/lib/libmmcamera_isp_bg_stats44.so
-vendor/lib/libmmcamera_isp_bhist_stats44.so
-vendor/lib/libmmcamera_isp_bpc40.so
-vendor/lib/libmmcamera_isp_chroma_enhan40.so
-vendor/lib/libmmcamera_isp_chroma_suppress40.so
-vendor/lib/libmmcamera_isp_clamp_encoder40.so
+vendor/lib/libmmcamera_isp_sub_module.so
 vendor/lib/libmmcamera_isp_clamp_video40.so
-vendor/lib/libmmcamera_isp_clamp_viewfinder40.so
-vendor/lib/libmmcamera_isp_color_correct40.so
-vendor/lib/libmmcamera_isp_color_xform_encoder40.so
-vendor/lib/libmmcamera_isp_color_xform_viewfinder40.so
-vendor/lib/libmmcamera_isp_cs_stats44.so
-vendor/lib/libmmcamera_isp_demosaic40.so
-vendor/lib/libmmcamera_isp_demux40.so
-vendor/lib/libmmcamera_isp_fovcrop_encoder40.so
-vendor/lib/libmmcamera_isp_fovcrop_viewfinder40.so
-vendor/lib/libmmcamera_isp_gamma40.so
-vendor/lib/libmmcamera_isp_ihist_stats44.so
-vendor/lib/libmmcamera_isp_linearization40.so
-vendor/lib/libmmcamera_isp_ltm44.so
-vendor/lib/libmmcamera_isp_luma_adaptation40.so
-vendor/lib/libmmcamera_isp_mce40.so
-vendor/lib/libmmcamera_isp_mesh_rolloff40.so
-vendor/lib/libmmcamera_isp_rs_stats44.so
+vendor/lib/libmmcamera_isp_bcc40.so
+vendor/lib/libmmcamera_isp_wb40.so
+vendor/lib/libmmcamera_isp_abf40.so
+vendor/lib/libmmcamera_isp_bpc40.so
 vendor/lib/libmmcamera_isp_scaler_encoder44.so
+vendor/lib/libmmcamera_isp_ltm44.so
+vendor/lib/libmmcamera_isp_fovcrop_viewfinder40.so
+vendor/lib/libmmcamera_isp_fovcrop_encoder40.so
+vendor/lib/libmmcamera_isp_bf_stats47.so
+vendor/lib/libmmcamera_isp_clamp_viewfinder40.so
+vendor/lib/libmmcamera_isp_bhist_stats44.so
+vendor/lib/libmmcamera_isp_cs_stats44.so
+vendor/lib/libmmcamera_isp_clamp_encoder40.so
+vendor/lib/libmmcamera_isp_chroma_enhan40.so
+vendor/lib/libmmcamera_isp_ihist_stats44.so
 vendor/lib/libmmcamera_isp_scaler_viewfinder44.so
 vendor/lib/libmmcamera_isp_sce40.so
-vendor/lib/libmmcamera_isp_sub_module.so
+vendor/lib/libmmcamera_isp_luma_adaptation40.so
+vendor/lib/libmmcamera_isp_mesh_rolloff40.so
+vendor/lib/libmmcamera_isp_be_stats44.so
+vendor/lib/libmmcamera_isp_rs_stats44.so
+vendor/lib/libmmcamera_isp_bg_stats44.so
+vendor/lib/libmmcamera_isp_color_xform_encoder40.so
+vendor/lib/libmmcamera_isp_demosaic40.so
+vendor/lib/libmmcamera_isp_demux40.so
+vendor/lib/libmmcamera_isp_color_xform_viewfinder40.so
+vendor/lib/libmmcamera_isp_chroma_suppress40.so
+vendor/lib/libmmcamera_isp_mce40.so
+vendor/lib/libmmcamera_isp_linearization40.so
 vendor/lib/libmmcamera_isp_template.so
-vendor/lib/libmmcamera_isp_wb40.so
+vendor/lib/libmmcamera_isp_color_correct40.so
+vendor/lib/libmmcamera_isp_gamma40.so
 
 # Consumer IR
 vendor/lib64/hw/consumerir.default.so
 
 # Fingerprint
 lib64/hw/gf_fingerprint.default.so:vendor/lib64/hw/gf_fingerprint.goodix.default.so|b09aba758c469f3e3ff04197a723a15fbdfafea1
-lib64/libgf_algo.so:vendor/lib64/libgf_algo.so
-lib64/libgf_ca.so:vendor/lib64/libgf_ca.so
-lib64/libgf_hal.so:vendor/lib64/libgf_hal.so
-lib64/libgoodixfingerprintd_binder.so:vendor/lib64/libgoodixfingerprintd_binder.so
+lib64/libgf_algo.so:vendor/lib64/libgf_algo.so|223fe4cd12e9d71f24b6a5daceb5aff054312366
+lib64/libgf_ca.so:vendor/lib64/libgf_ca.so|76dbed8211fbff5d88ab0bdb66a7f6ed12c3f2c2
+lib64/libgf_hal.so:vendor/lib64/libgf_hal.so|01a0a951f5defc023903b8ec6f27211adf8513fd
+lib64/libgoodixfingerprintd_binder.so:vendor/lib64/libgoodixfingerprintd_binder.so|028c098ce13d7de5d924d034f815fb640129dfdd
 vendor/etc/permissions/com.fingerprints.extension.xml
 vendor/framework/com.fingerprints.extension.jar
 vendor/lib64/com.fingerprints.extension@1.0.so
-vendor/lib64/hw/fingerprint.default.so:vendor/lib64/hw/fingerprint.fpc.default.so
 vendor/lib64/libvendor.goodix.hardware.fingerprint@1.0-service.so|feee131f714ed9a7dd93e7ba9bfc768cbf651426
 vendor/lib64/libvendor.goodix.hardware.fingerprint@1.0.so|c9d0251df63d8e34b6d70a59ad7b774c9f640fa1
+vendor/lib64/hw/fingerprint.default.so:vendor/lib64/hw/fingerprint.fpc.default.so
 
 # Gatekeeper - from daisy-user 10 QKQ1.191002.002 V11.0.21.0.QDLMIXM release-keys
 vendor/lib/hw/gatekeeper.msm8953.so|cd04140788659ae07a50081baeb3eb2e42f37028
@@ -364,10 +364,3 @@ vendor/lib64/hw/gatekeeper.msm8953.so|1086e5dcda7aa2bed7ac015f7850095f6199a1c2
 # Keystore - from daisy-user 10 QKQ1.191002.002 V11.0.21.0.QDLMIXM release-keys
 vendor/lib/hw/keystore.msm8953.so|c56d3768e04fc180d844dbca94be8c27770e37d5
 vendor/lib64/hw/keystore.msm8953.so|9660e1c13a3589114cf18db58e5b3c3c9e14059b
-
-# QC RIL - from Daisy QKQ1.191002.002 V11.0.5.0.QDLMIXM
-vendor/bin/hw/qcrild|c0db5589a45874c31c0bb7e8a7151511505c1e04
-vendor/etc/init/qcrild.rc|f9c32f5e7a8e7f4a0df1dcce174de169b8d7c060
-vendor/lib64/libqcrilFramework.so|3d8f25d13533f6fa45a36b23feb250291b663370
-vendor/lib64/libril-qc-hal-qmi.so|bf1a176d3890eaba94a115a311f98efe1010aeed
-vendor/lib64/qcrild_librilutils.so|c23470619690a34f7442fb6b26345de5dc4de880

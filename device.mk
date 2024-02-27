@@ -4,11 +4,10 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-# Indicate the first api level the device has been commercially launched on
-PRODUCT_SHIPPING_API_LEVEL := 25
-
 # Inherit from msm8953-common
 $(call inherit-product, device/xiaomi/msm8953-common/msm8953.mk)
+
+$(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_n_mr1.mk)
 
 # Overlay
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
@@ -18,13 +17,6 @@ TARGET_SCREEN_HEIGHT := 1920
 TARGET_SCREEN_WIDTH := 1080
 
 # A/B
-AB_OTA_UPDATER := true
-
-AB_OTA_PARTITIONS += \
-    boot \
-    system \
-    vendor
-
 AB_OTA_POSTINSTALL_CONFIG += \
     RUN_POSTINSTALL_system=true \
     POSTINSTALL_PATH_system=system/bin/otapreopt_script \
@@ -44,9 +36,6 @@ PRODUCT_PACKAGES += \
     android.hardware.boot@1.0-service \
     bootctrl.msm8953 \
 
-PRODUCT_PACKAGES_DEBUG += \
-    bootctl
-
 # Audio configuration
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/audio/audio_platform_info.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_platform_info.xml \
@@ -54,8 +43,7 @@ PRODUCT_COPY_FILES += \
 
 # Camera
 PRODUCT_PACKAGES += \
-    camera.msm8953 \
-    libmm-qcamera
+    camera.msm8953
 
 # ConsumerIr
 PRODUCT_PACKAGES += \
@@ -64,11 +52,7 @@ PRODUCT_PACKAGES += \
 
 # Fingerprint
 PRODUCT_PACKAGES += \
-    android.hardware.biometrics.fingerprint@2.1-service.xiaomi_msm8953 \
-    fakelogprint
-
-PRODUCT_COPY_FILES += \
-    frameworks/native/data/etc/android.hardware.fingerprint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.fingerprint.xml
+    android.hardware.biometrics.fingerprint@2.3-service.xiaomi_msm8953
 
 # Gatekeeper
 PRODUCT_PACKAGES += \
@@ -82,13 +66,6 @@ PRODUCT_PACKAGES += \
 
 # Properties
 -include device/xiaomi/tissot/prop.mk
-
-# Ramdisk
-PRODUCT_PACKAGES += \
-    init.goodix.sh \
-    init.recovery.qcom.rc \
-    init.recovery.qcom.usb.rc \
-    init.tissot.rc
 
 # Sensors
 PRODUCT_COPY_FILES += \
@@ -110,6 +87,10 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES_DEBUG += \
     update_engine_client
+
+# VNDK
+PRODUCT_COPY_FILES += \
+    prebuilts/vndk/v32/arm64/arch-arm64-armv8-a/shared/vndk-sp/libhidlbase.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhidlbase-v32.so
 
 # Inherit the proprietary files
 $(call inherit-product, vendor/xiaomi/tissot/tissot-vendor.mk)
