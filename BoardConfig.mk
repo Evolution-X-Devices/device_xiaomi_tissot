@@ -28,9 +28,6 @@ AB_OTA_PARTITIONS += \
     boot \
     system
 
-# Partitions
-BOARD_USERDATAIMAGE_PARTITION_SIZE := 55087422464 # 25765059584 - 16384
-
 # Camera
 TARGET_SUPPORT_HAL1 := false
 
