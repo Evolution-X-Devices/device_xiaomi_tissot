@@ -37,7 +37,6 @@ module = ExtractUtilsModule(
     'tissot',
     'xiaomi',
     blob_fixups=blob_fixups,
-    check_elf=False,
 )
 
 if __name__ == '__main__':
