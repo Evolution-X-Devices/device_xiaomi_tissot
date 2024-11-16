@@ -340,7 +340,7 @@ vendor/lib/libmmcamera_isp_color_correct40.so
 vendor/lib/libmmcamera_isp_gamma40.so
 
 # Consumer IR
-vendor/lib64/hw/consumerir.default.so:vendor/lib64/hw/consumerir.msm8953.so
+vendor/lib64/hw/consumerir.default.so:vendor/lib64/hw/consumerir.msm8953.so;FIX_SONAME
 
 # Fingerprint
 lib64/hw/gf_fingerprint.default.so:vendor/lib64/hw/gf_fingerprint.goodix.default.so;FIX_SONAME|b09aba758c469f3e3ff04197a723a15fbdfafea1
