@@ -7,15 +7,26 @@
 
 function blob_fixup() {
     case "${1}" in
-        vendor/lib64/libvendor.goodix.hardware.fingerprint@1.0-service.so)
-            "${PATCHELF_0_17_2}" --remove-needed "libprotobuf-cpp-lite.so" "${2}"
-            ;;
+    vendor/lib64/libvendor.goodix.hardware.fingerprint@1.0-service.so)
+        "${PATCHELF_0_17_2}" --remove-needed "libprotobuf-cpp-lite.so" "${2}"
+        ;;
 	vendor/lib/libmmcamera2_sensor_modules.so)
 	    sed -i 's|/system/etc/camera/|/vendor/etc/camera/|g' "${2}"
 	    ;;
 	vendor/lib64/libvendor.goodix.hardware.fingerprint@1.0.so)
-            "${PATCHELF_0_17_2}" --replace-needed "libhidlbase.so" "libhidlbase-v32.so" "${2}"
+        "${PATCHELF_0_17_2}" --replace-needed "libhidlbase.so" "libhidlbase-v32.so" "${2}"
 	    ;;
+    vendor/lib/libmmcamera_tuning.so)
+        "${PATCHELF_0_17_2}" --remove-needed "libmm-qcamera.so" "${2}"
+        ;;
+    vendor/lib64/libgoodixfingerprintd_binder.so)
+        "${PATCHELF_0_17_2}" --remove-needed "ld-android.so" "${2}"
+        "${PATCHELF_0_17_2}" --remove-needed "libbacktrace.so" "${2}"
+        "${PATCHELF_0_17_2}" --remove-needed "libunwind.so" "${2}"
+        "${PATCHELF_0_17_2}" --remove-needed "libkeystore_binder.so" "${2}"
+        "${PATCHELF_0_17_2}" --remove-needed "libsoftkeymasterdevice.so" "${2}"
+        "${PATCHELF_0_17_2}" --remove-needed "libsoftkeymaster.so" "${2}"
+        ;;
     esac
 
     # For all ELF files

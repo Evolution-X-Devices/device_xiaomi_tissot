@@ -51,7 +51,7 @@ vendor/lib/libmmcamera_sw2d_lib.so
 vendor/lib/libmmcamera_thread_services.so
 vendor/lib/libmmcamera_tintless_algo.so
 vendor/lib/libmmcamera_tintless_bg_pca_algo.so
-vendor/lib/libmmcamera_tuning.so
+vendor/lib/libmmcamera_tuning.so|5a8dda67b0b7d863a1b324bc82d69f46b88faa34
 vendor/lib/libmmcamera_tuning_lookup.so
 vendor/lib/libmmjpeg.so
 vendor/lib/libmmqjpeg_codec.so
@@ -347,7 +347,7 @@ lib64/hw/gf_fingerprint.default.so:vendor/lib64/hw/gf_fingerprint.goodix.default
 lib64/libgf_algo.so:vendor/lib64/libgf_algo.so|223fe4cd12e9d71f24b6a5daceb5aff054312366
 lib64/libgf_ca.so:vendor/lib64/libgf_ca.so|76dbed8211fbff5d88ab0bdb66a7f6ed12c3f2c2
 lib64/libgf_hal.so:vendor/lib64/libgf_hal.so|01a0a951f5defc023903b8ec6f27211adf8513fd
-lib64/libgoodixfingerprintd_binder.so:vendor/lib64/libgoodixfingerprintd_binder.so|028c098ce13d7de5d924d034f815fb640129dfdd
+lib64/libgoodixfingerprintd_binder.so:vendor/lib64/libgoodixfingerprintd_binder.so|9d39377377d360eeb4fd293b9584fdb452a92714
 vendor/etc/permissions/com.fingerprints.extension.xml
 vendor/framework/com.fingerprints.extension.jar
 vendor/lib64/libvendor.goodix.hardware.fingerprint@1.0-service.so|feee131f714ed9a7dd93e7ba9bfc768cbf651426
