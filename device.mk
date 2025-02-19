@@ -29,13 +29,8 @@ PRODUCT_PACKAGES += \
 
 # Boot control
 PRODUCT_PACKAGES += \
-    android.hardware.boot@1.0-impl.recovery \
-    bootctrl.msm8953.recovery
-
-PRODUCT_PACKAGES += \
-    android.hardware.boot@1.0-impl \
-    android.hardware.boot@1.0-service \
-    bootctrl.msm8953 \
+    android.hardware.boot-service.qti \
+    android.hardware.boot-service.qti.recovery
 
 # Audio configuration
 PRODUCT_COPY_FILES += \

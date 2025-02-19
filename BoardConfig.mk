@@ -17,6 +17,7 @@ TARGET_SCREEN_DENSITY := 400
 BOARD_USES_RECOVERY_AS_BOOT := true
 TARGET_NO_RECOVERY := true
 
+<<<<<<< HEAD
 # HIDL
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
 
@@ -31,6 +32,8 @@ AB_OTA_PARTITIONS += \
 # Camera
 TARGET_SUPPORT_HAL1 := false
 
+=======
+>>>>>>> 23e82b0 (daisy: switch to common QCOM AIDL bootctrl HAL)
 # Power
 TARGET_TAP_TO_WAKE_NODE := "/proc/touchpanel/enable_dt2w"
 
