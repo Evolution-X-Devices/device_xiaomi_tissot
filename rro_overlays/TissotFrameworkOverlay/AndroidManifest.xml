@@ -4,13 +4,13 @@
      SPDX-License-Identifier: Apache-2.0
 -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.android.frameworkdaisy">
+    package="com.android.frameworktissot">
 
     <overlay
         android:isStatic="true"
         android:priority="100"
         android:requiredSystemPropertyName="ro.product.vendor.device"
-        android:requiredSystemPropertyValue="daisy"
+        android:requiredSystemPropertyValue="tissot"
         android:targetPackage="android"
         android:targetName="framework" />
 </manifest>

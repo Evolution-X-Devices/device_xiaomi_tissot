@@ -6,7 +6,7 @@
 
 LOCAL_PATH := $(call my-dir)
 
-ifeq ($(USES_DEVICE_XIAOMI_DAISY),true)
+ifeq ($(TARGET_DEVICE),tissot)
 
 include $(call all-makefiles-under,$(LOCAL_PATH))
 
