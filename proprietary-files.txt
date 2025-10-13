@@ -355,9 +355,6 @@ vendor/lib/libmmcamera_ov5675_qtech.so
 vendor/lib/libmmcamera_qtech_ov5675_eeprom.so
 vendor/lib/libmmcamera_s5k5e8_ofilm.so
 
-# Consumerir
-vendor/lib64/hw/consumerir.default.so
-
 # Fingerprint (goodix)
 vendor/lib64/hw/gf_fingerprint.default.so:vendor/lib64/hw/gf_fingerprint.goodix.default.so;FIX_SONAME;DISABLE_CHECKELF
 lib64/libgf_algo.so:vendor/lib64/libgf_algo.so;DISABLE_CHECKELF

@@ -51,10 +51,6 @@ endif
 PRODUCT_PACKAGES += \
     camera.msm8953
 
-# Consumer IR
-PRODUCT_PACKAGES += \
-    android.hardware.ir-service.example
-
 # Fastbootd 
 PRODUCT_PACKAGES += \
     fastbootd
