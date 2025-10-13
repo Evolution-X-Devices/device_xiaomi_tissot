@@ -55,6 +55,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.ir-service.example
 
+# Fastbootd 
+PRODUCT_PACKAGES += \
+    fastbootd
+    
 # Fstab
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/etc/fstab_AB.qcom:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.qcom \
