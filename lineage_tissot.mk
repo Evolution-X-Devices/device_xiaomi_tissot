@@ -15,9 +15,8 @@ $(call inherit-product, device/xiaomi/tissot/device.mk)
 # Inherit some common LineageOS stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
-EVO_BUILD_TYPE := Official
+WITH_GAPPS := false
 TARGET_BOOT_ANIMATION_RES := 1080
-TARGET_USES_PICO_GAPPS := true
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := tissot
