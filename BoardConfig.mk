@@ -21,17 +21,10 @@ AB_OTA_UPDATER := true
 
 AB_OTA_PARTITIONS += \
     boot \
-    system \
-    vendor
+    system
 
 # Display
 TARGET_SCREEN_DENSITY := 440
-
-# Partitions (vendor)
-BOARD_VENDORIMAGE_PARTITION_SIZE := 629145600
-BOARD_VENDORIMAGE_FILE_SYSTEM_TYPE := ext4
-TARGET_COPY_OUT_VENDOR := vendor
-BOARD_PROPERTY_OVERRIDES_SPLIT_ENABLED := true
 
 # Power
 TARGET_TAP_TO_WAKE_NODE := "/proc/touchpanel/wakeup_gesture"
