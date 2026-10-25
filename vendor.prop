@@ -3,6 +3,7 @@ persist.vendor.audio.fluence.speaker=true
 persist.vendor.audio.fluence.voicecall=true
 persist.vendor.audio.fluence.voicerec=false
 ro.vendor.audio.sdk.fluencetype=fluence
+vendor.audio.feature.multi_voice_session.enable=true
 vendor.audio.platform_info_xml.path=/vendor/etc/audio_platform_info.xml
 vendor.audio.mixer_xml.path=/vendor/etc/mixer_paths_mtp.xml
 
